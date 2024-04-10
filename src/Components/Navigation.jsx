@@ -1,9 +1,24 @@
 import { Link } from "react-router-dom";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-function Navigation({darkMode, toggleDarkMode }) {
+function Navigation({ darkMode, toggleDarkMode }) {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const openMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+
+
+
   return (
     <nav className="h-44 flex flex-row justify-between items-center px-20">
       <Link to="/Home">

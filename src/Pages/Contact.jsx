@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 
 function Contact() {
@@ -13,7 +14,7 @@ function Contact() {
 
   return (
     <main className="flex flex-row justify-center items-center scroll-smooth">
-      <h1 className={`text-9xl py-32 transition-opacity duration-1000 ease-in-out ${showTitle ? "opacity-100" : "opacity-0"}`}>Let's connect</h1>
+      <h1 className={`text-9xl py-32 transition-opacity duration-1000 ease-in-out md: text-center ${showTitle ? "opacity-100" : "opacity-0"}`}>Let's connect</h1>
     </main>
   );
 }
