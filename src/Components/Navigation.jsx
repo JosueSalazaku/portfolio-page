@@ -10,12 +10,12 @@ function Navigation({ darkMode, toggleDarkMode }) {
           JOSUE <br />SALAZAKU
         </h2>
       </Link>
-      <div className="flex items-center">
+      <div className="flex flex-row items-start gap-5">
         <button
           onClick={toggleDarkMode}
-          className="px-4 py-2 bg-gray-800 text-white rounded-md"
+          className="px-8  py-2 text-white rounded-md"
         >
-          {darkMode ? <MdOutlineLightMode /> : <MdOutlineDarkMode/>}
+          {darkMode ? <MdOutlineLightMode /> : <MdOutlineDarkMode className={darkMode ? "text-white" : "text-black"} />}
         </button>
         <ul className="flex flex-col justify-start items-end gap-2 font-medium text-xl">
           <li>
@@ -32,6 +32,5 @@ function Navigation({ darkMode, toggleDarkMode }) {
     </nav>
   );
 }
-
 
 export default Navigation;
