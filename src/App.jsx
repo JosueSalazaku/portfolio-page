@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
@@ -10,14 +10,13 @@ import '../src/index.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
   return (
     <Router>
-      <main className={darkMode ? "h-screen bg-gray-900 text-white" : "h-screen bg-white text-gray-900"}>
+      <main className={darkMode ? "h-screen bg-neutral-900 text-white" : "h-screen bg-white text-gray-900"}>
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/Home" element={<Home />} />

@@ -1,7 +1,9 @@
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer className="h-28">
+        footer
+    </footer>
   )
 }
 

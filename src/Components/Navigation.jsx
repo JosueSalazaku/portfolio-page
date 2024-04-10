@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 
-function Navigation({ darkMode, toggleDarkMode }) {
+// eslint-disable-next-line react/prop-types
+function Navigation({darkMode, toggleDarkMode }) {
   return (
     <nav className="h-44 flex flex-row justify-between items-center px-20">
       <Link to="/Home">
