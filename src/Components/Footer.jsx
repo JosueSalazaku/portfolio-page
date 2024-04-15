@@ -1,34 +1,32 @@
-import { Link } from "react-router-dom"
-import About from "../Pages/About"
-import Works from "../Pages/Work"
-import Contact from "../Pages/Contact"
+import { Link } from "react-router-dom";
 
-function Footer() {
+
+function Footer({ darkMode }) {
   return (
-    <footer className="h-82 border p-20 end">
-      <div className="flex flex-col">
-        <div className="flex flex-row justify-start space-x-44">
-          <div>LOGO</div>
-          <div className="pl-52">
-            <p>EXPLORE</p>
-            <div className="flex flex-row space-x-20">
+    <footer className={ darkMode ? "fixed bottom-0 w-full h-64 bg-gray-100 border-t border-gray-200 py-4 px-20" : " bg-neutral-800 border-t  h-64 border-gray-200 py-4 px-20" }>
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row md:items-center">
+          <div className="mb-2 md:mb-0">LOGO</div>
+          <div className="ml-4">
+            <p className="font-bold">EXPLORE</p>
+            <div className="flex flex-col md:flex-row space-y-2 md:space-x-8 md:space-y-0">
               <ul>
-                <li><Link to={Works}>Works</Link></li>
-                <li><Link to={About}></Link>About me</li>
-                <li><Link to={Contact}></Link>Contact</li>
+                <li><Link to="/Works">Works</Link></li>
+                <li><Link to="/About">About Me</Link></li>
+                <li><Link to="/Contact">Contact</Link></li>
               </ul>
               <ul>
-                <li><a href="">Github</a></li>
-                <li><a href=""></a>LinkdIn</li>
-                <li><a href=""></a>Instagram</li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="mt-20">©Josué Salazaku Design 2024</div>
-        </div>
+        <div>© Josué Salazaku Design 2024</div>
+      </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
