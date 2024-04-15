@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 function Navigation({ darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -42,6 +43,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
               <RxHamburgerMenu style={{ fontSize: "30px" }} />
             )}
           </button>
+
         </section>
         {/* Conditionally render navigation links based on screen size */}
         <ul className="flex-col justify-start items-end gap-2 font-medium text-xl hidden lg:flex">
@@ -56,6 +58,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
           </li>
         </ul>
       </div>
+
       {/* Overlay menu for mobile */}
       {isOpen && (
   <div
@@ -67,7 +70,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
     onClick={closeMenu}
   >
     <div className="flex h-full justify-center items-center">
-      <ul className="flex-col justify-start space-y-20 font-extrabold text-7xl text-center">
+      <ul className="flex-col justify-start space-y-20 font-bold text-7xl text-center">
         <li className="hover:text-neutral-400 hover:delay-75">
           <Link to="/Work">Work</Link>
         </li>
