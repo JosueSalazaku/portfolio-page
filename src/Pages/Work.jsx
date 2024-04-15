@@ -13,7 +13,7 @@ function Works() {
 
   return (
     <main className="flex flex-row justify-center items-center scroll-smooth">
-      <h1 className={`text-9xl py-32 transition-opacity duration-1000 ease-in-out md: text-center ${showTitle ? "opacity-100" : "opacity-0"}`}>Let me show you</h1>
+      <h1 className={`text-8xl py-32 transition-opacity duration-1000 ease-in-out md:text-9xl md: text-center ${showTitle ? "opacity-100" : "opacity-0"}`}>Let me show you</h1>
     </main>
   );
 }
