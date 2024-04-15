@@ -50,7 +50,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
         </ul>
       </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-white bg-opacity-75" onClick={closeMenu}>
+        <div className={darkMode ? "fixed inset-0 bg-neutral-800 bg-opacity-75" : "fixed bg-white inset-0 bg-opacity-75"} onClick={closeMenu}>
           
         </div>
       )}
