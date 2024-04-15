@@ -2,7 +2,9 @@
 function Home() {
   return (
       <main className="">
-          home 
+      <h1 className="text-6xl">
+        JOSUE
+      </h1> 
     </main>
   )
 }

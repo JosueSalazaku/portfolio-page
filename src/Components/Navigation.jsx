@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -32,7 +33,10 @@ function Navigation({ darkMode, toggleDarkMode }) {
           className="px-8  py-2 text-white rounded-md"
         >
           {darkMode ? <MdOutlineLightMode /> : <MdOutlineDarkMode className={darkMode ? "text-white" : "text-black"} />}
-        </button>
+              </button>
+              <section>
+                  <button className="h-20" onClick={openMenu}><RxHamburgerMenu style={{ fontSize: "24px" }} /></button>
+              </section>
         <ul className="flex flex-col justify-start items-end gap-2 font-medium text-xl">
           <li>
             <Link to="/About">About</Link>
@@ -45,7 +49,14 @@ function Navigation({ darkMode, toggleDarkMode }) {
           </li>
         </ul>
       </div>
-    </nav>
+      {isOpen && (
+        <div className="fixed inset-0 bg-white bg-opacity-75" onClick={closeMenu}>
+          
+        </div>
+      )}
+      </nav>
+      
+      
   );
 }
 
