@@ -65,7 +65,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
     className={
       darkMode
         ? "fixed inset-0 z-40 bg-neutral-900 backdrop-filter backdrop-blur-sm transition-opacity duration-500 text-white bg-opacity-90 text-6xl"
-        : "fixed inset-0 z-40 bg-white backdrop-filter backdrop-blur-sm transition-opacity duration-500 text-black bg-opacity-80 text-6xl"
+        : "fixed inset-0 z-40 bg-white backdrop-filter backdrop-blur-sm transition-opacity duration-500 text-black bg-opacity-90 text-6xl"
     }
     onClick={closeMenu}
   >

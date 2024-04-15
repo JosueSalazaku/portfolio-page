@@ -1,18 +1,19 @@
 
-function Home() {
+// eslint-disable-next-line react/prop-types
+function Home({darkMode}) {
   return (
-      <main className="h-screen flex flex-col">
-      <section className="h-screen border">
-      <h1 className="text-6xl px-20">
-        JOSUE
+      <main className={darkMode ? "h-screen flex flex-col justify-start items-center" : "h-screen flex flex-col justify-start items-center" }>
+      <section className="h-screen pt-20 ">
+      <h1 className="text-7xl px-20">
+        Digital Developer
       </h1> 
       </section>  
-      <section className="h-screen rounded-2xl bg-indigo-200">
+      <section className="h-screen w-screen rounded-t-2xl bg-indigo-400">
         <h1 className="text-6xl px-20 pt-20">WHAT I DO.</h1>
       </section>
-      <section className="h-screen">
-
-      </section>
+      {/* <section className="h-screen">
+        <h1><h1/>
+      </section> */}
     </main>
   )
 }
