@@ -9,7 +9,7 @@ function Footer() {
       <div className="flex flex-col">
         <div className="flex flex-row justify-start space-x-44">
           <div>LOGO</div>
-          <div>
+          <div className="pl-52">
             <p>EXPLORE</p>
             <div className="flex flex-row space-x-20">
               <ul>
@@ -25,7 +25,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-20">© Josué Salazaku Design 2024</div>
+        <div className="mt-20">©Josué Salazaku Design 2024</div>
         </div>
     </footer>
   )
