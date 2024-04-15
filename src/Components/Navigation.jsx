@@ -18,9 +18,9 @@ function Navigation({ darkMode, toggleDarkMode }) {
   };
 
   return (
-    <nav className="h-44 flex flex-row justify-between items-center px-20">
-      <Link to="/Home">
-        <h2 className="font-extrabold text-2xl">
+    <nav className="h-32 flex flex-row justify-between items-center px-20">
+      <Link to="/Home"> 
+        <h2 className="font-extrabold text-3xl text-indigo-400">
           JOSUE <br /> SALAZAKU
         </h2>
       </Link>
@@ -47,13 +47,13 @@ function Navigation({ darkMode, toggleDarkMode }) {
         </section>
         {/* Conditionally render navigation links based on screen size */}
         <ul className="flex-col justify-start items-end gap-2 font-medium text-xl hidden lg:flex">
-        <li className="hover:text-neutral-400 hover:delay-75 ">
+        <li className="hover:text-indigo-400 hover:delay-300 ">
             <Link to="/Work">Work</Link>
           </li>
-          <li className="hover:text-neutral-400 hover:delay-300 ">
+          <li className="hover:text-indigo-400 hover:delay-300 ">
             <Link to="/About">About Me</Link>
           </li>
-          <li className="hover:text-neutral-400 hover:delay-75 ">
+          <li className="hover:text-indigo-400 hover:delay-300 ">
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>
@@ -64,26 +64,27 @@ function Navigation({ darkMode, toggleDarkMode }) {
   <div
     className={
       darkMode
-        ? "fixed inset-0 z-40 bg-neutral-900 transition-opacity duration-500 text-white bg-opacity-90 text-6xl"
-        : "fixed inset-0 z-40 bg-white transition-opacity duration-500 text-black  bg-opacity-80 text-6xl"
+        ? "fixed inset-0 z-40 bg-neutral-900 backdrop-filter backdrop-blur-sm transition-opacity duration-500 text-white bg-opacity-90 text-6xl"
+        : "fixed inset-0 z-40 bg-white backdrop-filter backdrop-blur-sm transition-opacity duration-500 text-black bg-opacity-80 text-6xl"
     }
     onClick={closeMenu}
   >
     <div className="flex h-full justify-center items-center">
       <ul className="flex-col justify-start space-y-20 font-bold text-7xl text-center">
-        <li className="hover:text-neutral-400 hover:delay-75">
+        <li className="hover:text-indigo-400 hover:delay-75">
           <Link to="/Work">Work</Link>
         </li>
-        <li className="hover:text-neutral-400 hover:delay-300">
+        <li className="hover:text-indigo-400 hover:delay-300">
           <Link to="/About">About Me</Link>
         </li>
-        <li className="hover:text-neutral-400 hover:delay-75">
+        <li className="hover:text-indigo-400 hover:delay-75">
           <Link to="/Contact">Contact</Link>
         </li>
       </ul>  
     </div>
   </div>
 )}
+
 
     </nav>
   );

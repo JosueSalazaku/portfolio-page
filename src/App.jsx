@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Router>
-      <main className={darkMode ? "h-screen bg-neutral-900 text-white scroll-smooth transition-all duration-500 " : "h-screen bg-white text-gray-900 scroll-smooth transition-all duration-500"}>
+      <main className={darkMode ? "h-screen bg-neutral-900 text-white scroll-smooth transition-all duration-500 " : "h-screen text-gray-900 scroll-smooth transition-all duration-500"}>
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/Home" element={<Home />} />
