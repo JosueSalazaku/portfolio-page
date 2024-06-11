@@ -5,7 +5,7 @@ function Home({darkMode}) {
       <main className={darkMode ? "h-screen flex flex-col justify-start items-center" : "h-screen flex flex-col justify-start items-center" }>
       <section className="h-screen pt-20 ">
       <h1 className="text-7xl px-20">
-        Digital Developer
+        Frontend Developer
       </h1> 
       </section>  
       <section className="h-screen w-screen rounded-t-2xl bg-indigo-400">
