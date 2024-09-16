@@ -15,7 +15,7 @@ function Home() {
         </div>
         <div className="font-sans">
           <p>About me</p>
-          <p className="font-light">
+          <p className="font-normal">
             Creating vibrant paintings that explore emotions, stories, and abstract concepts into vivid, expressive artworks.
             Balancing my artistic practice with professional web development, I focus on crafting visually
             compelling and functional websites. Passionate about blending creativity with functionality,
