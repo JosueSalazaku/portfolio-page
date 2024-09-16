@@ -1,20 +1,22 @@
 function Home() {
   return (
-    <main className="mx-auto mb-14 w-full max-w-screen-sm flex-1 px-4 pb-8">
+    <main className="mx-auto font-roboto mb-14 w-full max-w-screen-sm flex-1 px-4 pb-8">
       <section className="h-screen pt-20 flex flex-col gap-5">
-        <div className="flex gap-5">
+        <div className="flex gap-5 items-center">
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full size-[65px]"
             src="josuesalazaku.png"
             alt="Profile Picture"
           />
-          <div className="font-sans">
+          <div className="font-semibold text-[18px]">
             <p>Josué Salazaku</p>
-            <p className="font-light">Visual Artist / Web Developer</p>
+            <p className="font-light">
+              Visual Artist / Web Developer
+            </p>
           </div>
         </div>
-        <div className="font-sans">
-          <p>About me</p>
+        <div className="pt-8 space-y-3">
+          <p className="font-semibold">About me</p>
           <p className="font-normal">
             Creating vibrant paintings that explore emotions, stories, and
             abstract concepts into vivid, expressive artworks. Balancing my
