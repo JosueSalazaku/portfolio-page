@@ -10,12 +10,17 @@ function Home() {
           />
           <div className="font-sans">
             <p>Josué Salazaku</p>
-            <p>Visual Artist / Web Developer</p>
+            <p className="font-light">Visual Artist / Web Developer</p>
           </div>
         </div>
         <div className="font-sans">
           <p>About me</p>
-          <p>Visual Artist / Web Developer</p>
+          <p className="font-light">
+            Creating vibrant paintings that explore emotions, stories, and abstract concepts into vivid, expressive artworks.
+            Balancing my artistic practice with professional web development, I focus on crafting visually
+            compelling and functional websites. Passionate about blending creativity with functionality,
+            I aim to deliver unique experiences both on canvas and online.
+          </p>
         </div>
       </section>
     </main>
