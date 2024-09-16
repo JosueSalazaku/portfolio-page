@@ -1,5 +1,4 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -17,7 +16,6 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Work" element={<Work />} />
         </Routes>
-        <Footer />
       </main>
     </Router>
   );
