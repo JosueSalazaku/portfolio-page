@@ -1,14 +1,22 @@
-
 function Home() {
   return (
-      <main className={darkMode ? "h-screen flex flex-col justify-start items-center" : "h-screen flex flex-col justify-start items-center" }>
-      <section className="h-screen pt-20 ">
-      <h1 className="text-7xl px-20">
-        Frontend Developer
-      </h1> 
-      </section>  
-      <section className="h-screen w-screen rounded-t-2xl bg-indigo-400">
-        <h1 className="text-6xl px-20 pt-20">WHAT I DO.</h1>
+    <main className="mx-auto mb-14 w-full max-w-screen-sm flex-1 px-4 pb-8">
+      <section className="h-screen pt-20 flex flex-col gap-5">
+        <div className="flex gap-5">
+          <img
+            className="rounded-full w-20 h-20"
+            src="public/josuesalazaku.png"
+            alt="Profile Picture"
+          />
+          <div className="font-sans">
+            <p>Josué Salazaku</p>
+            <p>Visual Artist / Web Developer</p>
+          </div>
+        </div>
+        <div className="font-sans">
+          <p>About me</p>
+          <p>Visual Artist / Web Developer</p>
+        </div>
       </section>
     </main>
   );
