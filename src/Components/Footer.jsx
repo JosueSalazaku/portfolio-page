@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 // eslint-disable-next-line react/prop-types
 function Footer({ darkMode }) {
   return (
@@ -25,7 +24,7 @@ function Footer({ darkMode }) {
             </ul>
           </div>
         </div>
-        <div className="mt-4 md:mt-0">© Josué Salazaku Design 2023</div>
+        <div className="mt-4 md:mt-0">© Josué Salazaku Design 2024</div>
       </div>
     </footer>
   );
