@@ -11,7 +11,7 @@ export default function Home() {
           <div className="">
             <p className="font-meduim">Josué Salazaku</p>
             <p className="text-zinc-500">
-              Visual Artist / Web Developer
+              Frontend Developer
             </p>
           </div>
         </div>
