@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-        <body className="bg-white dark:bg-zinc-900 transition-colors duration-[3000ms]">
+    <html lang="en" >
+      <body className="bg-white dark:bg-zinc-900">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
