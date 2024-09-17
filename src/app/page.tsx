@@ -1,3 +1,4 @@
+import Nav from "@/Components/Nav";
 import Image from "next/image";
 
 
@@ -7,11 +8,11 @@ export default function Home() {
       <section className="h-screen pt-20 flex flex-col gap-5">
         <div className="flex gap-5 items-center">
           <Image
-            className="rounded-full size-[65px]"
+            className="rounded-full size-[62px] cursor-pointer"
             src="/josuesalazaku.png"
             alt="Profile Picture"
-            width={65}
-            height={65}
+            width={60}
+            height={60}
           />
           <div className="">
             <p className="font-meduim">Josué Salazaku</p>
@@ -23,13 +24,14 @@ export default function Home() {
         <div className="pt-8 space-y-3">
           <p className="font-meduim">About me</p>
           <p className="text-zinc-300">
-            Front-end developer based in Antwerp, Belgium, focused building visually engaging and
-            functional websites I blend creativity with practicality to create user-friendly
-            experiences that work seamlessly. I aim to deliver websites that are both
-            aesthetically appealing and intuitive for users.
+            Based in Antwerp, Belgium, I focus on creating great web experiences
+            by blending creativity with practicality. With attention to detail
+            and user-centric design, My goal is to deliver websites that are
+            both intuitive and enjoyable to use.
           </p>
         </div>
       </section>
+      <Nav />
     </main>
   );
 }
