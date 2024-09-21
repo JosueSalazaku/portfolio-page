@@ -9,13 +9,13 @@ export default function Nav() {
       <div className='w-[250px] h-[50px] flex flex-row items-center px-10 justify-between rounded-md 
         dark:bg-zinc-900 shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.2)] 
         dark:shadow-[0_4px_8px_rgba(255,255,255,0.3),0_6px_12px_rgba(255,255,255,0.5)]'>
-        {/* Updated shadow for white glow in dark mode */}
+
         <ul className='flex flex-row items-center justify-between w-full'>
           <Link href="/">
-            <li className="text-lg font-semibold text-black dark:font-light dark:text-gray-200">H</li> 
+            <li className="text-lg px-2 font-semibold text-black rounded-md dark:font-light dark:text-gray-200 hover:bg-blue-600">H</li> 
           </Link>
           <Link href="/works">
-            <li className="text-lg font-semibold text-black dark:font-light dark:text-gray-200">W</li>
+            <li className="text-lg px-2 font-semibold text-black rounded-md dark:font-light dark:text-gray-200 hover:bg-red-600">W</li>
           </Link>
           <ModeToggle />
         </ul>
