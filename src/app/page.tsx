@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+
 
 export default function Home() {
   return (
@@ -15,6 +19,14 @@ export default function Home() {
           <div>
             <p className="font-medium text-black dark:text-white">Josué Salazaku</p>
             <p className="text-zinc-500 dark:text-zinc-400">Frontend Developer</p>
+            <div className=" flex flex-row gap-5">
+              <a href="https://github.com/josuesalazaku" target="_blank" rel="noopener noreferrer">
+              <FaGithubSquare />
+              </a>
+              <a href="https://www.linkedin.com/in/josu%C3%A9-salazaku-a0114b294/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
         <div className="pt-8 space-y-3">
