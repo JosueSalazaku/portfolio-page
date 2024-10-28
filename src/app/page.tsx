@@ -1,3 +1,4 @@
+import { Button } from "@/Components/ui/button";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -6,8 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-screen-sm font-roboto text-[17px] mb-14 w-full flex-1 px-4 pb-8">
-      <section className="h-screen pt-20 flex flex-col gap-5">
+    <main>
+      <section className=" pt-20 flex flex-col gap-5">
         <div className="flex gap-5 items-center">
           <Image
             className="rounded-full cursor-pointer"
@@ -30,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         <div className="pt-8 space-y-3">
-          <p className="font-medium text-black dark:text-white">About me</p>
+          <h1 className="font-medium text-black dark:text-white">About me</h1>
           <p className="text-gray-500 dark:text-gray-400">
             Based in Antwerp, Belgium, I focus on creating great web experiences
             by blending creativity with practicality. With attention to detail
@@ -38,6 +39,36 @@ export default function Home() {
             both intuitive and enjoyable to use.
           </p>
         </div>
+      </section>
+      <section className="flex flex-col justify-normal pt-12">
+      <h1 className="font-medium text-4xl text-black dark:text-white">Current technologies</h1>
+        <div className="flex flex-row p-12">
+          <div className="flex flex-row border rounded w-[180px] h-[50px]">
+            <Image
+              src="/Typescript logo.svg"
+              alt="Typescript Logo"
+              width={30}
+              height={50}
+            />
+          </div>
+          <Button>REEACT</Button>
+          <Button>NEXT</Button>
+          <Button>FIGMA</Button>
+        </div>
+        <div>
+          <Button>TAILWIND</Button>
+          <Button>GIT</Button>
+          <Button>POSTGRES</Button>
+          <Button>DRIZZLE ORM</Button>
+        </div>
+      </section>
+      <section className="flex flex-col justify-normal pt-12">
+      <h1 className="font-medium text-4xl text-black dark:text-white pb-12">My portfolio</h1>
+      <div className="flex flex-row gap-12">
+        <div className="border rounded-l w-[350px] h-[350px]"></div>
+        <div className="border rounded-l w-[350px] h-[350px]"></div>
+        </div>
+
       </section>
     </main>
   );
