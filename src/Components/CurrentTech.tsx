@@ -4,14 +4,14 @@ import Image from "next/image";
 
 function CurrentTech() {
   const techs = [
-    { color: "#1C3345", image: "/Typescript Color.svg" },
-    { color: "#0C4258", image: "/React color.svg" },
-    { color: "#262342", image: "/Next.js color.svg" },
-    { color: "#1C534A", image: "/TailwindCSS color.svg" },
-    { color: "#71271A", image: "/Git color.svg" },
-    { color: "#254B6E", image: "/postgresql color.svg" },
-    { color: "#32642E", image: "/Express color.svg" },
-    { color: "#729129", image: "/drizzle color.svg" },
+    { color: "#1C3345", image: "/Typescript.svg" },
+    { color: "#0C4258", image: "/React.svg" },
+    { color: "#262342", image: "/Next.svg" },
+    { color: "#1C534A", image: "/TailwindCSS.svg" },
+    { color: "#71271A", image: "/Git.svg" },
+    { color: "#254B6E", image: "/PostgreSQL.svg" },
+    { color: "#32642E", image: "/Express.svg" },
+    { color: "#729129", image: "/Drizzle.svg" },
   ];
 
   return (

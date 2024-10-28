@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  mode: 'jit', // Explicitly enabling JIT mode
   darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,10 +10,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // Custom configurations go here if needed
+      // Custom configurations
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
+
 
 export default config;
