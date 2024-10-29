@@ -16,7 +16,7 @@ function CurrentTech() {
 
   return (
     <section className="flex flex-col pt-12 pb-12">
-      <h1 className="font-bold text-4xl text-black dark:text-white">
+      <h1 className="font-bold text-4xl dark:text-white">
         Current Technologies
       </h1>
       <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">

@@ -3,7 +3,7 @@ import React from 'react'
 function ProjectsSection() {
   return (
     <section className="flex flex-col justify-normal pt-12">
-    <h1 className="font-medium text-4xl text-black dark:text-white pb-12">
+    <h1 className="font-medium text-4xl dark:text-white pb-12">
       My portfolio
     </h1>
     <div className="flex flex-row gap-12">
