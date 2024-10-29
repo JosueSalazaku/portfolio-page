@@ -12,10 +12,10 @@ export default function Nav() {
 
         <ul className='flex flex-row items-center justify-between w-full'>
           <Link href="/">
-            <li className="text-lg px-2 font-semibold rounded-md dark:font-light dark:text-white hover:bg-blue-600">H</li> 
+            <li className="px-2 text-lg font-semibold rounded-md dark:font-light dark:text-white hover:bg-blue-600">H</li> 
           </Link>
           <Link href="/works">
-            <li className="text-lg px-2 font-semibold rounded-md dark:font-light dark:text-white hover:bg-red-600">W</li>
+            <li className="px-2 text-lg font-semibold rounded-md dark:font-light dark:text-white hover:bg-red-600">W</li>
           </Link>
           <ModeToggle />
         </ul>

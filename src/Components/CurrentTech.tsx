@@ -24,11 +24,11 @@ function CurrentTech() {
         build highly functional solutions. These are some of my main
         technologies.
       </p>
-      <div className="flex flex-row gap-8 pt-8">
+      <div className="flex flex-row flex-wrap gap-8 pt-8">
         {techs.map((tech, index) => (
           <div key={index} className="flex flex-col items-center">
             <div
-              className="flex items-center justify-center w-12 h-12 transition-all duration-300 rounded"
+              className="flex items-center justify-center w-12 h-12 rounded"
               style={{
                 backgroundColor: tech.color,
               }}

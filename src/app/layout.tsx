@@ -14,13 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 dark:bg-black dark:text-white">
+    <html lang="en" className="transition-colors duration-700 ease-in-out">
+      <body id="main-body" className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-black dark:text-white">
         <ThemeProvider
-          attribute="class"           
-          defaultTheme="light"         
-          enableSystem                 
-          disableTransitionOnChange   
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
         >
           <Nav />
           {children}
