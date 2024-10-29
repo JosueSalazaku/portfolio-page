@@ -16,10 +16,10 @@ function CurrentTech() {
 
   return (
     <section className="flex flex-col pt-12 pb-12">
-      <h1 className="text-4xl font-bold dark:text-white">
+      <h1 className="font-bold dark:text-white">
         Current Technologies
       </h1>
-      <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
+      <p className="mt-4 text-[#646464] dark:text-[#b3b1b1]">
         I’m proficient in a range of modern technologies that empower me to
         build highly functional solutions. These are some of my main
         technologies.
