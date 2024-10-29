@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="transition-colors duration-700 ease-in-out">
-      <body id="main-body" className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-black dark:text-white">
+      <body id="main-body" className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-zinc-950 dark:text-white">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

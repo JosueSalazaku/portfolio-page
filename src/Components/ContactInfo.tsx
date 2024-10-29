@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-function ConnectInfo() {
+function ContactInfo() {
   return (
     <div className="flex flex-row gap-2">
     <a
@@ -23,4 +23,4 @@ function ConnectInfo() {
   )
 }
 
-export default ConnectInfo
+export default ContactInfo

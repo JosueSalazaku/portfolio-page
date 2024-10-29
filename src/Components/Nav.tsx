@@ -6,9 +6,10 @@ import { ModeToggle } from './ModeToggle'
 export default function Nav() {
   return (
     <nav className='mx-auto h-[50px] flex flex-col justify-center items-center rounded border-white fixed bottom-20 left-0 right-0 z-50'>
-      <div className='w-[250px] h-[50px] flex flex-row items-center px-10 justify-between rounded-md 
-        dark:bg-white-900 shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.2)] 
-        dark:shadow-[0_4px_8px_rgba(255,255,255,0.3),0_6px_12px_rgba(255,255,255,0.5)]'>
+      <div className="w-[250px] h-[50px] flex items-center px-10 justify-between rounded-lg border 
+  border-zinc-700 dark:border-zinc-800 
+  bg-zinc-800 dark:bg-zinc-800
+  backdrop-blur-lg shadow-md dark:shadow-lg">
 
         <ul className='flex flex-row items-center justify-between w-full'>
           <Link href="/">

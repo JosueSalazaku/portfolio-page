@@ -29,7 +29,7 @@ export default function Home() {
           <h1 className="font-bold dark:text-white">About me</h1>
           <p className="text-[#646464] dark:text-[#b3b1b1]">
             Based in Antwerp, Belgium, I focus on creating
-            I create intuitive, visually stunning and highly functional web applications.
+            intuitive and visually stunning and highly functional web applications.
           </p>
         </div>
       </section>
