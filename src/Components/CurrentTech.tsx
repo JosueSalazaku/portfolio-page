@@ -4,19 +4,19 @@ import Image from "next/image";
 
 function CurrentTech() {
   const techs = [
-    { color: "#1C3345", image: "/Typescript.svg" },
-    { color: "#0C4258", image: "/React.svg" },
-    { color: "#262342", image: "/Next.svg" },
-    { color: "#1C534A", image: "/TailwindCSS.svg" },
-    { color: "#71271A", image: "/Git.svg" },
-    { color: "#254B6E", image: "/PostgreSQL.svg" },
-    { color: "#32642E", image: "/Express.svg" },
-    { color: "#729129", image: "/Drizzle.svg" },
+    { color: "#1C3345", alt:'Typescript', image: "/Typescript.svg" },
+    { color: "#0C4258", alt:'React', image: "/React.svg" },
+    { color: "#262342", alt:'Next.js', image: "/Next.svg" },
+    { color: "#1C534A", alt:'Tailwind Css', image: "/TailwindCSS.svg" },
+    { color: "#71271A", alt:'Git', image: "/Git.svg" },
+    { color: "#254B6E", alt:'Postgres', image: "/PostgreSQL.svg" },
+    { color: "#32642E", alt:'Express.js', image: "/Express.svg" },
+    { color: "#729129", alt:'Drizzle ORM', image: "/Drizzle.svg" },
   ];
 
   return (
     <section className="flex flex-col pt-12 pb-12">
-      <h1 className="font-bold text-4xl dark:text-white">
+      <h1 className="text-4xl font-bold dark:text-white">
         Current Technologies
       </h1>
       <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
@@ -24,39 +24,20 @@ function CurrentTech() {
         build highly functional solutions. These are some of my main
         technologies.
       </p>
-      <div className="pt-8 flex flex-row gap-8">
+      <div className="flex flex-row gap-8 pt-8">
         {techs.map((tech, index) => (
           <div key={index} className="flex flex-col items-center">
             <div
-              className="flex items-center justify-center rounded w-12 h-12 transition-all duration-300"
+              className="flex items-center justify-center w-12 h-12 transition-all duration-300 rounded"
               style={{
                 backgroundColor: tech.color,
-                filter: "grayscale(100%)", 
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.filter = "none"; 
-                const img = e.currentTarget.querySelector("img");
-                if (img) {
-                  img.style.filter = "none"; 
-                }
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.filter = "grayscale(100%)"; 
-                const img = e.currentTarget.querySelector("img");
-                if (img) {
-                  img.style.filter = "grayscale(100%)"; 
-                }
               }}
             >
               <Image
                 src={tech.image}
-                alt="Current tech Logo"
+                alt={tech.alt}
                 width={30}
-                height={40}
-                className=" transition-all duration-140"
-                style={{
-                  filter: "grayscale(100%)", 
-                }}
+                height={30}
               />
             </div>
           </div>
