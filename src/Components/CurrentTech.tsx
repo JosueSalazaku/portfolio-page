@@ -53,7 +53,7 @@ function CurrentTech() {
                 alt="Current tech Logo"
                 width={30}
                 height={40}
-                className=" transition-all duration-300"
+                className=" transition-all duration-140"
                 style={{
                   filter: "grayscale(100%)", 
                 }}

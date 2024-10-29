@@ -18,10 +18,10 @@ export default function Home() {
             height={60}
           />
           <div>
-            <p className="font-medium text-black dark:text-white">
+            <p className="font-medium text-black">
               Josué Salazaku
             </p>
-            <p className="text-zinc-500 dark:text-zinc-400">
+            <p className="text-zinc-500">
               Frontend Developer
             </p>
             <div className="flex flex-row gap-5">

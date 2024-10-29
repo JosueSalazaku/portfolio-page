@@ -14,17 +14,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
-      <body className="bg-white dark:bg-black mx-auto h-screen max-w-screen-sm font-roboto text-[17px] mb-14 w-full flex-1 px-4 pb-8">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+    <html lang="en">
+      <body className="mx-auto h-screen max-w-screen-sm font-roboto text-[17px] mb-14 w-full flex-1 px-4 pb-8 dark:bg-black dark:text-white">
+        <ThemeProvider
+          attribute="class"           
+          defaultTheme="light"         
+          enableSystem                 
+          disableTransitionOnChange   
         >
-                <Nav />
-            {children}
-          </ThemeProvider>
+          <Nav />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
