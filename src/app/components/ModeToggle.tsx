@@ -13,7 +13,7 @@ export function ModeToggle() {
 
   if (!isMounted) {
     return (
-      <div className="p-2 transition-all duration-300 bg-white border border-gray-300 rounded-sm dark:border-gray-600 dark:bg-black">
+      <div className="p-2 transition-all duration-300 bg-white border rounded-sm dark:border-gray-600 dark:bg-black">
         <Sun className="w-5 h-5 text-gray-400" /> 
       </div>
     );
@@ -22,7 +22,7 @@ export function ModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 transition-all duration-300 bg-white border border-gray-300 rounded-xl dark:border-gray-600 dark:bg-black"
+      className="p-2 transition-all duration-300 bg-white border border-gray-light dark:border-gray-medium rounded-xl dark:bg-black"
       aria-label="Toggle theme"
     >
       {theme === "light" ? (
