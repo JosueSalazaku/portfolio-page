@@ -1,29 +1,35 @@
 "use client";
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import { Button } from "@/Components/ui/button";
+import { useTheme } from "@/components/ThemeProvider"; 
 
 export function ModeToggle() {
-    const { theme, setTheme } = useTheme();
-    const [mounted, setMounted] = React.useState(false);
+    const { theme, toggleTheme } = useTheme();
+    const [isMounted, setIsMounted] = React.useState(false);
 
     React.useEffect(() => {
-        setMounted(true);
+        setIsMounted(true); 
     }, []);
 
-    if (!mounted) return null;
-    const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
-    };
+    if (!isMounted) {
+        return (
+            <div className="p-2 transition-all duration-300 bg-white border border-gray-300 rounded-full dark:border-gray-600 dark:bg-black">
+                <Sun className="w-5 h-5 text-gray-400" /> {/* Placeholder */}
+            </div>
+        );
+    }
 
     return (
-        <Button variant="outline" size="icon" onClick={toggleTheme}>
+        <button
+            onClick={toggleTheme}
+            className="p-2 transition-all duration-300 bg-white border border-gray-300 rounded-full dark:border-gray-600 dark:bg-black"
+            aria-label="Toggle theme"
+        >
             {theme === "light" ? (
-                <Sun className="h-[1.2rem] w-[1.2rem] transition-all duration-300 text-black" />
+                <Sun className="w-5 h-5 text-black" />
             ) : (
-                <Moon className="h-[1.2rem] w-[1.2rem] transition-all duration-300 text-white" />
+                <Moon className="w-5 h-5 text-white" />
             )}
-        </Button>
+        </button>
     );
 }

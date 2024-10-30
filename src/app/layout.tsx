@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/Components/ThemeProvider";
-import Nav from "@/Components/Nav";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "Portfolio site",
@@ -14,13 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="transition-colors duration-700 ease-in-out">
+    <html lang="en" suppressHydrationWarning>
       <body id="main-body" className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-zinc-950 dark:text-white">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-        >
+        <ThemeProvider>
           <Nav />
           {children}
         </ThemeProvider>

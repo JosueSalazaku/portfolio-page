@@ -24,41 +24,25 @@ function CurrentTech() {
         build highly functional solutions. These are some of my main
         technologies.
       </p>
-      <div className="flex flex-wrap gap-8 pt-8 sm:gap-12">
-        <div className="flex flex-wrap gap-8 sm:flex-col sm:gap-4">
-          {techs.slice(0, 4).map((tech, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div
-                className="flex items-center justify-center w-12 h-12 rounded"
-                style={{ backgroundColor: tech.color }}
-              >
-                <Image
-                  src={tech.image}
-                  alt={tech.alt}
-                  width={20}
-                  height={20}
-                />
-              </div>
+      <div className="flex flex-wrap gap-8 pt-8 sm:flex-col sm:gap-4">
+        {techs.map((tech, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center"
+          >
+            <div
+              className="flex items-center justify-center w-10 h-10 rounded"
+              style={{ backgroundColor: tech.color }}
+            >
+              <Image
+                src={tech.image}
+                alt={tech.alt}
+                width={20}
+                height={20}
+              />
             </div>
-          ))}
-        </div>
-        <div className="flex flex-wrap gap-8 sm:flex-col sm:gap-8">
-          {techs.slice(4).map((tech, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div
-                className="flex items-center justify-center w-12 h-12 rounded"
-                style={{ backgroundColor: tech.color }}
-              >
-                <Image
-                  src={tech.image}
-                  alt={tech.alt}
-                  width={20}
-                  height={20}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
