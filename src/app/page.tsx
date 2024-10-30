@@ -1,6 +1,6 @@
 "use client";
-import CurrentTech from "@/Components/CurrentTech";
-import ProjectsSection from "@/Components/ProjectsSection";
+import CurrentTech from "@/components/CurrentTech";
+import ProjectsSection from "@/components/ProjectsSection";
 import Image from "next/image";
 
 
