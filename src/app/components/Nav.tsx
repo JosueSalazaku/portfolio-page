@@ -7,9 +7,9 @@ export default function Nav() {
   return (
     <nav className='mx-auto h-[50px] flex flex-col justify-center items-center rounded border-white fixed bottom-20 left-0 right-0 z-50'>
       <div className="w-[250px] h-[50px] flex items-center px-10 justify-between rounded-lg border 
-  border-zinc-300 dark:border-zinc-800 
-  bg-zinc-200 dark:bg-zinc-800
-  backdrop-blur-lg shadow-md dark:shadow-lg">
+  border-zinc-300 dark:border-meduimGray 
+  bg-zinc-100 dark:bg-[#111111]
+  backdrop-blur-2xl opacity-95 shadow-md dark:shadow-lg">
 
         <ul className='flex flex-row items-center justify-between w-full'>
           <Link href="/">

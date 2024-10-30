@@ -8,6 +8,14 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      "darkmodeGray": "#b3b1b1",
+      "whitmodeGray": "#646464",
+      "white": "#FFFFFF",
+      "black": "#111111",
+      "darkGray": "#191919",
+      "meduimGray": "#2C2C2C",
+    }
   },
   plugins: [],
 };

@@ -6,15 +6,7 @@
     transition: background-color 700ms;
 }
 
-html.light body {
-  background-color: white;
-  color: black;
-}
 
-html.dark body {
-  background-color: #111; 
-  color: white;
-}
 
 body {
   transition: background-color 0.2s ease, color 0.2s ease;
