@@ -17,15 +17,15 @@ export default function Home() {
           />
           <div>
             <p className="font-medium dark:text-white">Josué Salazaku</p>
-            <p className="text-whitmodeGray dark:text-darkmodeGray">
+            <p className="text-gray-lightmode dark:text-gray-darkmode">
               Frontend Developer
             </p>
           </div>
         </div>
         <div className="pt-8 space-y-3">
           <h1 className="font-bold dark:text-white">About me</h1>
-          <p className="text-whitmodeGray dark:text-darkmodeGray">
-            Based in Antwerp, Belgium, I focus on creating intuitive and
+          <p className="text-gray-lightmode dark:text-gray-darkmode">
+            Based in Antwerp, Belgium. I focus on creating intuitive and
             visually stunning and highly functional web applications.
           </p>
         </div>
