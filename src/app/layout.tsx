@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import Nav from "@/components/Nav";
+import { ThemeProvider } from "/Users/josuesalazaku/Developer/Projects/portfolio-page/src/components/ThemeProvider";
+import Nav from "/Users/josuesalazaku/Developer/Projects/portfolio-page/src/components/Nav";
 
 export const metadata: Metadata = {
   title: "Portfolio site",
