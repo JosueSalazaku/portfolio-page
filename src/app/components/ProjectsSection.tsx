@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function ProjectsSection() {
   return (
@@ -7,9 +8,11 @@ function ProjectsSection() {
       <h1 className="pb-6 font-bold dark:text-white">
         My Portfolio
       </h1>
+      <Link href="/works" passHref>  
       <button className="w-24 p-2 mb-4 border rounded-lg dark:bg-gray-dark border-gray-light dark:border-gray-medium">
         All works
       </button>
+      </Link>
       </div>
       <div className="flex flex-col w-full max-w-screen-lg gap-6 md:flex-row md:gap-6">
         {/* Left Column */}
