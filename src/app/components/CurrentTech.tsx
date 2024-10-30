@@ -20,9 +20,10 @@ function CurrentTech() {
         Current Technologies
       </h1>
       <p className="mt-4 text-[#646464] dark:text-[#b3b1b1]">
-        I’m proficient in a range of modern technologies that empower me to
-        build highly functional solutions. These are some of my main
-        technologies.
+        Here are some of the main tools and tech I use day-to-day to
+        build awesome stuff. From frameworks to libraries,
+        these are the go-to technologies that help bring my
+        ideas to life.
       </p>
       <div id="logo" className="flex flex-row gap-[12px] pt-8  md:gap-9 lg:gap-9">
 

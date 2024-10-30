@@ -1,17 +1,28 @@
-import React from 'react'
+import React from 'react';
 
 function ProjectsSection() {
   return (
-    <section className="flex flex-col justify-normal pt-12">
-    <h1 className="font-medium text-4xl dark:text-white pb-12">
-      My portfolio
-    </h1>
-    <div className="flex flex-row gap-12">
-      <div className="border rounded-lg w-[350px] h-[350px]"></div>
-      <div className="border rounded-lg w-[350px] h-[350px]"></div>
-    </div>
-  </section>
-  )
+    <section className="flex flex-col pt-12">
+      <h1 className="pb-12 font-bold dark:text-white">
+        My Portfolio
+      </h1>
+      <button className='w-24 p-2 rounded-lg bg-zinc-800 borer'>All works</button>
+      
+      <div className="flex flex-col w-full max-w-screen-lg gap-6 md:flex-row md:gap-6">
+        {/* Left Column */}
+        <div className="flex flex-col flex-grow gap-6">
+          <div className="border rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="border rounded-lg w-full aspect-[4/3] flex-grow"></div>
+        </div>
+
+        {/* Right Column */}
+        <div className="flex flex-col flex-grow gap-6">
+          <div className="border rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="border rounded-lg w-full aspect-[4/3] flex-grow"></div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default ProjectsSection
+export default ProjectsSection;
