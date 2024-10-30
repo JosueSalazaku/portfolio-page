@@ -25,7 +25,7 @@ function CurrentTech() {
         these are the go-to technologies that help bring my
         ideas to life.
       </p>
-      <div id="logo" className="flex flex-row gap-[12px] pt-8  md:gap-9 lg:gap-9">
+      <div id="logo" className="flex flex-row gap-[12px] pt-8  md:gap-9 lg:gap-[38px]">
 
         {techs.map((tech, index) => (
           <div

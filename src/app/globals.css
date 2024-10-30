@@ -7,7 +7,6 @@
 }
 
 
-
 body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -32,6 +31,12 @@ body {
 
 @media screen and (min-width: 610px) and (max-width: 760px) {
   #logo {
-    gap: 2.2rem;
+    gap: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 760px) {
+  #logo {
+    gap: 2.4rem;
   }
 }
