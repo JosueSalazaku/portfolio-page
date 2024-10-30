@@ -22,7 +22,7 @@ export function ModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 transition-all duration-300 bg-white border border-gray-light dark:border-gray-medium rounded-xl dark:bg-black"
+      className="p-2 transition-all duration-300 bg-white border border-gray-light hover:border-gray-medium dark:border-gray-medium dark:hover:border-gray-darkmode rounded-xl dark:bg-black"
       aria-label="Toggle theme"
     >
       {theme === "light" ? (
