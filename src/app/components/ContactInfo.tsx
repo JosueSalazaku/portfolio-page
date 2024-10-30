@@ -1,26 +1,17 @@
 import React from 'react'
-import { FaGithubSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 
 function ContactInfo() {
   return (
-    <div className="flex flex-row gap-2">
-    <a
-      href="https://github.com/josuesalazaku"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaGithubSquare size={24} className="dark:text-white" />
-    </a>
-    <a
-      href="https://www.linkedin.com/in/josu%C3%A9-salazaku-a0114b294/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaLinkedin size={24} className="dark:text-white" />
-    </a>
-  </div>
+    <div className="pt-8 space-y-1">
+      <h1 className="font-bold dark:text-white">Connect</h1>
+      <p className="text-gray-lightmode dark:text-gray-darkmode">
+        Discover my projects on <a href="https://github.com/JosueSalazaku" className="font-normal text-blue-500 hover:underline">Github</a>, 
+        connect with me on <a href="https://www.linkedin.com/in/yourusername" className="font-normal text-blue-500 hover:underline">LinkedIn</a>, 
+        or email me directly at <a href="mailto:josuesalazaku@gmail.com" className="font-normal text-blue-500 hover:underline">josuesalazaku@gmail.com</a>.
+      </p>
+    </div>
   )
 }
 
 export default ContactInfo
+ 

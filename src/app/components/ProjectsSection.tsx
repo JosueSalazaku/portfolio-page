@@ -17,8 +17,12 @@ function ProjectsSection() {
       <div className="flex flex-col w-full max-w-screen-lg gap-6 md:flex-row md:gap-6">
         {/* Left Column */}
         <div className="flex flex-col flex-grow gap-6">
-          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow"></div>
-          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow">
+            <div className='border rounded-lg border-gray-light dark:border-gray-medium'></div>
+          </div>
+          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow">
+            <div className='border rounded-lg border-gray-light dark:border-gray-medium'></div>
+          </div>
         </div>
 
         {/* Right Column */}

@@ -1,4 +1,5 @@
 "use client";
+import ContactInfo from "./components/ContactInfo";
 import CurrentTech from "./components/CurrentTech";
 import ProjectsSection from "./components/ProjectsSection";
 import Image from "next/image";
@@ -29,6 +30,7 @@ export default function Home() {
             visually stunning and highly functional web applications.
           </p>
         </div>
+        <ContactInfo />
       </section>
       <CurrentTech />
       <ProjectsSection />

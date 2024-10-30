@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         id="main-body"
-        className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-[#111111] dark:text-white"
+        className="mx-auto h-screen max-w-screen-sm font-thin text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-[#111111] dark:text-white"
       >
         <ThemeProvider>
           <Nav />
