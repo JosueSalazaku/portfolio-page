@@ -19,7 +19,7 @@ function CurrentTech() {
       <h1 className="font-bold dark:text-white">
         Current Technologies
       </h1>
-      <p className="mt-4 text-gray-lightmode dark:text-gray-lightmode">
+      <p className="mt-4 text-gray-lightmode dark:text-gray-darkmode">
         Here are some of the main tools and tech I use day-to-day to
         build awesome stuff. From frameworks to libraries,
         these are the go-to technologies that help bring my
