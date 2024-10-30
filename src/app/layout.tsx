@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Portfolio site",
@@ -17,11 +18,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         id="main-body"
-        className="mx-auto h-screen max-w-screen-sm font-normal text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-[#111111] dark:text-white"
+        className="flex flex-col min-h-screen font-normal text-[17px] mx-auto max-w-screen-sm w-full px-4 transition-colors duration-700 ease-in-out dark:bg-[#111111] dark:text-white"
       >
         <ThemeProvider>
           <Nav />
-          {children}
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
