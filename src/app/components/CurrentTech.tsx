@@ -4,14 +4,14 @@ import Image from "next/image";
 
 function CurrentTech() {
   const techs = [
-    { color: "#1C3345", alt: "Typescript", image: "/typescript.svg" },
-    { color: "#0C4258", alt: "React", image: "/react.svg" },
-    { color: "#262342", alt: "Next.js", image: "/Next.svg" },
-    { color: "#1C534A", alt: "Tailwind CSS", image: "/TailwindCSS.svg" },
-    { color: "#71271A", alt: "Git", image: "/git.svg" },
-    { color: "#254B6E", alt: "Postgres", image: "/PostgreSQL.svg" },
-    { color: "#32642E", alt: "Express.js", image: "/Express.svg" },
-    { color: "#729129", alt: "Drizzle ORM", image: "/drizzle.svg" },
+    { color: "#0E1A22", alt: "Typescript", image: "/typescript.svg" },
+    { color: "#06212C", alt: "React", image: "/react.svg" },
+    { color: "#17152A", alt: "Next.js", image: "/Next.svg" },
+    { color: "#0D2A26", alt: "Tailwind CSS", image: "/TailwindCSS.svg" },
+    { color: "#3A130D", alt: "Git", image: "/git.svg" },
+    { color: "#12283A", alt: "Postgres", image: "/PostgreSQL.svg" },
+    { color: "#1A3618", alt: "Express.js", image: "/Express.svg" },
+    { color: "#394C14", alt: "Drizzle ORM", image: "/drizzle.svg" },    
   ];
 
   return (
@@ -39,7 +39,7 @@ function CurrentTech() {
               <Image
                 src={tech.image}
                 alt={tech.alt}
-                width={20}
+                width={25}
                 height={20}
               />
             </div>
