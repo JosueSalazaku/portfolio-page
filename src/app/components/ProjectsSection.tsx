@@ -3,13 +3,14 @@ import React from 'react';
 function ProjectsSection() {
   return (
     <section className="flex flex-col pt-12">
-      <h1 className="pb-12 font-bold dark:text-white">
+      <div className='flex flex-col md:flex-row md:items-center md:gap-[412px] lg:flex-row lg:gap-[412px]'>
+      <h1 className="pb-6 font-bold dark:text-white">
         My Portfolio
       </h1>
       <button className="w-24 p-2 mb-4 border rounded-lg dark:bg-gray-dark border-gray-light dark:border-gray-medium">
         All works
       </button>
-      
+      </div>
       <div className="flex flex-col w-full max-w-screen-lg gap-6 md:flex-row md:gap-6">
         {/* Left Column */}
         <div className="flex flex-col flex-grow gap-6">
