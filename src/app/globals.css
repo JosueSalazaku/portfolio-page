@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 #main-body {
     transition: background-color 700ms;
 }
@@ -19,4 +18,28 @@ html.dark body {
 
 body {
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media screen and (min-width: 470px) and (max-width: 760px) {
+  #logo {
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 760px) {
+  #logo {
+    gap: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 760px) {
+  #logo {
+    gap: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 610px) and (max-width: 760px) {
+  #logo {
+    gap: 2.2rem;
+  }
 }

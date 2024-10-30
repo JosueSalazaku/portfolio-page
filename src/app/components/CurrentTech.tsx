@@ -15,7 +15,7 @@ function CurrentTech() {
   ];
 
   return (
-    <section className="flex flex-col pt-12 pb-12">
+    <section className="flex flex-col pt-12 pb-12 ">
       <h1 className="font-bold dark:text-white">
         Current Technologies
       </h1>
@@ -24,7 +24,8 @@ function CurrentTech() {
         build highly functional solutions. These are some of my main
         technologies.
       </p>
-      <div className="flex flex-wrap gap-8 pt-8 sm:flex-col sm:gap-4">
+      <div id="logo" className="flex flex-row gap-[12px] pt-8  md:gap-9 lg:gap-9">
+
         {techs.map((tech, index) => (
           <div
             key={index}
