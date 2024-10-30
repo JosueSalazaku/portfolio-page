@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "/Users/josuesalazaku/Developer/Projects/portfolio-page/src/components/ThemeProvider";
-import Nav from "/Users/josuesalazaku/Developer/Projects/portfolio-page/src/components/Nav";
+import { ThemeProvider } from "./components/ThemeProvider";
+import Nav from "./components/Nav";
 
 export const metadata: Metadata = {
   title: "Portfolio site",
@@ -15,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body id="main-body" className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-zinc-950 dark:text-white">
+      <body
+        id="main-body"
+        className="mx-auto h-screen max-w-screen-sm text-[17px] mb-14 w-full flex-1 px-4 pb-8 transition-color duration-700 ease-in-out dark:bg-zinc-950 dark:text-white"
+      >
         <ThemeProvider>
           <Nav />
           {children}

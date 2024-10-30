@@ -1,8 +1,7 @@
 "use client";
-import CurrentTech from "/Users/josuesalazaku/Developer/Projects/portfolio-page/src/components/CurrentTech";
+import CurrentTech from "./components/CurrentTech";
 import ProjectsSection from "/Users/josuesalazaku/Developer/Projects/portfolio-page/src/app/page";
 import Image from "next/image";
-
 
 export default function Home() {
   return (
@@ -17,9 +16,7 @@ export default function Home() {
             height={60}
           />
           <div>
-            <p className="font-medium">
-              Josué Salazaku
-            </p>
+            <p className="font-medium">Josué Salazaku</p>
             <p className="text-[#646464] dark:text-[#b3b1b1]">
               Frontend Developer
             </p>
@@ -28,8 +25,8 @@ export default function Home() {
         <div className="pt-8 space-y-3">
           <h1 className="font-bold dark:text-white">About me</h1>
           <p className="text-[#646464] dark:text-[#b3b1b1]">
-            Based in Antwerp, Belgium, I focus on creating
-            intuitive and visually stunning and highly functional web applications.
+            Based in Antwerp, Belgium, I focus on creating intuitive and
+            visually stunning and highly functional web applications.
           </p>
         </div>
       </section>
