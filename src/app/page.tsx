@@ -1,6 +1,6 @@
 "use client";
 import CurrentTech from "./components/CurrentTech";
-import ProjectsSection from "@/app/components/ProjectsSection";
+import ProjectsSection from "./components/ProjectsSection";
 import Image from "next/image";
 
 export default function Home() {
