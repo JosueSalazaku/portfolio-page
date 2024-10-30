@@ -6,19 +6,21 @@ function ProjectsSection() {
       <h1 className="pb-12 font-bold dark:text-white">
         My Portfolio
       </h1>
-      <button className='w-24 p-2 mb-4 rounded-lg bg-darkGray borer'>All works</button>
+      <button className="w-24 p-2 mb-4 border rounded-lg dark:bg-gray-dark border-gray-light dark:border-gray-medium">
+        All works
+      </button>
       
       <div className="flex flex-col w-full max-w-screen-lg gap-6 md:flex-row md:gap-6">
         {/* Left Column */}
         <div className="flex flex-col flex-grow gap-6">
-          <div className="bg-darkGray  border border-meduimGray rounded-lg w-full aspect-[4/3] flex-grow"></div>
-          <div className="bg-darkGray  border border-meduimGray rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow"></div>
         </div>
 
         {/* Right Column */}
         <div className="flex flex-col flex-grow gap-6">
-          <div className="bg-darkGray border border-meduimGray rounded-lg w-full aspect-[4/3] flex-grow"></div>
-          <div className="bg-darkGray  border border-meduimGray rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow"></div>
+          <div className="bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg w-full aspect-[4/3] flex-grow"></div>
         </div>
       </div>
     </section>
