@@ -14,7 +14,7 @@ export default function Nav() {
       >
         <ul className="flex flex-row items-center justify-between w-full">
           <Link href="/" passHref>
-            <button className="flex items-center justify-center px-2 text-lg font-semibold transition-colors duration-300 rounded-lg h-9 w-9 hover:bg-gray-light focus:bg-gray-light dark:focus:bg-gray-medium dark:hover:bg-gray-medium dark:font-light dark:text-white">
+            <button aria-label="Home" className="flex items-center justify-center px-2 text-lg font-semibold transition-colors duration-300 rounded-lg h-9 w-9 hover:bg-gray-light focus:bg-gray-light dark:focus:bg-gray-medium dark:hover:bg-gray-medium dark:font-light dark:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -33,7 +33,7 @@ export default function Nav() {
             </button>
           </Link>
           <Link href="/works" passHref>
-            <button className="flex items-center justify-center px-2 text-lg font-semibold transition-colors duration-300 rounded-lg h-9 w-9 hover:bg-gray-light focus:bg-gray-light dark:focus:bg-gray-medium dark:hover:bg-gray-medium dark:font-light dark:text-white">
+            <button aria-label="Works" className="flex items-center justify-center px-2 text-lg font-semibold transition-colors duration-300 rounded-lg h-9 w-9 hover:bg-gray-light focus:bg-gray-light dark:focus:bg-gray-medium dark:hover:bg-gray-medium dark:font-light dark:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
