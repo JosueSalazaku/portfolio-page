@@ -31,9 +31,10 @@ export default function Home() {
           </p>
         </div>
         <ContactInfo />
+        <CurrentTech />
+        <ProjectsSection />
       </section>
-      <CurrentTech />
-      <ProjectsSection />
+
     </main>
   );
 }

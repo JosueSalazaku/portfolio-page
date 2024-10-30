@@ -20,7 +20,7 @@ function CurrentTech() {
         Current Technologies
       </h1>
       <p className="mt-4 text-gray-lightmode dark:text-gray-darkmode">
-        Here are some of the main tools and tech I use day-to-day to
+        Here are some of the main tools and tech I use to
         build awesome stuff. From frameworks to libraries,
         these are the go-to technologies that help bring my
         ideas to life.
