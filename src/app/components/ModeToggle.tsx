@@ -14,7 +14,7 @@ export function ModeToggle() {
   if (!isMounted) {
     return (
       <div className="p-2 transition-all duration-300 bg-white border border-gray-300 rounded-sm dark:border-gray-600 dark:bg-black">
-        <Sun className="w-5 h-5 text-gray-400" /> {/* Placeholder */}
+        <Sun className="w-5 h-5 text-gray-400" /> 
       </div>
     );
   }
