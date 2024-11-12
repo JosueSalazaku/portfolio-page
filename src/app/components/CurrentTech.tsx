@@ -7,11 +7,11 @@ function CurrentTech() {
     { color: "#0E1A22", alt: "Typescript", image: "/typescript.svg" },
     { color: "#06212C", alt: "React", image: "/react.svg" },
     { color: "#17152A", alt: "Next.js", image: "/Next.svg" },
-    { color: "#0D2A26", alt: "Tailwind CSS", image: "/TailwindCSS.svg" },
+    { color: "#0D2A26", alt: "Tailwind", image: "/TailwindCSS.svg" },
     { color: "#3A130D", alt: "Git", image: "/git.svg" },
     { color: "#12283A", alt: "Postgres", image: "/PostgreSQL.svg" },
-    { color: "#1A3618", alt: "Express.js", image: "/Express.svg" },
-    { color: "#394C14", alt: "Drizzle ORM", image: "/drizzle.svg" },
+    { color: "#1A3618", alt: "Express", image: "/Express.svg" },
+    { color: "#394C14", alt: "Drizzle", image: "/drizzle.svg" },
   ];
 
   return (
@@ -33,6 +33,7 @@ function CurrentTech() {
             >
               <Image src={tech.image} alt={tech.alt} width={20} height={20} />
             </div>
+            <p className="mt-2 text-xs dark:text-gray-lightmode">{tech.alt}</p>
           </div>
         ))}
       </div>
