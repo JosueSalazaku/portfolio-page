@@ -21,17 +21,21 @@ function ProjectsSection() {
       {/* Portfolio Grid */}
       <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
         {/* Project Card */}
-        <Link href={"/linkup-peach.vercel.app"}>
+        <Link
+          href="https://keanino.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
             <Image
-              src="/images/journo-preview.jpg"
+              src="/keanino.jpeg"
               alt="Journo Project"
-              width={40}
+              width={840}
               height={40}
               className="object-cover w-full h-full"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-              <h2 className="text-lg font-bold text-white">Journo</h2>
+              <h2 className="text-lg font-bold text-white">Keanino</h2>
               <div className="flex flex-wrap gap-2 mt-2">
                 <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
                   Next.js
