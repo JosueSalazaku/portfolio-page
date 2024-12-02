@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Josué Salazaku",
@@ -23,7 +23,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Nav />
           <main className="flex-grow">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
