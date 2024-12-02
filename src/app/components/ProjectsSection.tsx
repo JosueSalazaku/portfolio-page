@@ -10,19 +10,18 @@ function ProjectsSection() {
         <h1 className="pb-6 text-2xl font-bold dark:text-white">
           My Portfolio
         </h1>
-        <Link
+        {/* <Link
           href="/works"
           className="block w-24 p-2 mb-4 text-center transition duration-300 ease-in-out border rounded-lg dark:bg-gray-dark hover:border-gray-lightmode dark:hover:border-gray-darkmode border-gray-light dark:border-gray-medium"
         >
           All works
-        </Link>
+        </Link> */}
       </div>
 
       {/* Portfolio Grid */}
-
       <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
         {/* Project Card */}
-        <Link href={"/journo"}>
+        <Link href={"/linkup-peach.vercel.app"}>
           <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
             <Image
               src="/images/journo-preview.jpg"
@@ -49,12 +48,17 @@ function ProjectsSection() {
         </Link>
 
         {/* Project Card */}
-        <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
+        <a
+          href="https://linkup-peach.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]"
+        >
           <Image
-            src="/images/linkup-preview.jpg"
+            src="/linkup.jpeg"
             alt="LinkUp Project"
-            width={40}
-            height={40}
+            width={840}
+            height={140}
             className="object-cover w-full h-full"
           />
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
@@ -68,7 +72,7 @@ function ProjectsSection() {
               </span>
             </div>
           </div>
-        </div>
+        </a>
 
         {/* Placeholder Card
     <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
