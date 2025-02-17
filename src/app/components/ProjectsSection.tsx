@@ -24,8 +24,6 @@ function ProjectsSection() {
         {/* Project Card */}
         <Link
           href="works/unreadpiles"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
             <Image
@@ -38,15 +36,15 @@ function ProjectsSection() {
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
               <h2 className="text-lg font-bold text-white">Unread Piles</h2>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
-                  Next.js
-                </span>
-                <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
-                  TailwindCSS
-                </span>
-                <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
-                  Postgress
-                </span>
+          <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
+            Next.js
+          </span>
+          <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
+            TailwindCSS
+          </span>
+          <span className="px-2 py-1 text-xs text-white rounded bg-gray-dark">
+            Postgress
+          </span>
               </div>
             </div>
           </div>
@@ -55,8 +53,6 @@ function ProjectsSection() {
         {/* Project Card */}
         <Link
           href="works/keanino"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
             <Image
@@ -84,10 +80,9 @@ function ProjectsSection() {
         </Link>
 
         {/* Project Card */}
-        <a
-          href="works/journo"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="works/linkup"
+
           className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]"
         >
           <Image
@@ -108,7 +103,7 @@ function ProjectsSection() {
               </span>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </section>
   );
