@@ -23,7 +23,7 @@ function ProjectsSection() {
       <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
         {/* Project Card */}
         <Link
-          href="https://unread-piles.vercel.app"
+          href="works/unreadpiles"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -54,7 +54,7 @@ function ProjectsSection() {
 
         {/* Project Card */}
         <Link
-          href="https://keanino.vercel.app"
+          href="works/keanino"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -85,7 +85,7 @@ function ProjectsSection() {
 
         {/* Project Card */}
         <a
-          href="https://linkup-peach.vercel.app"
+          href="works/journo"
           target="_blank"
           rel="noopener noreferrer"
           className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]"
@@ -109,20 +109,6 @@ function ProjectsSection() {
             </div>
           </div>
         </a>
-
-        {/* Placeholder Card
-    <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
-      <div className="flex items-center justify-center w-full h-full">
-        <h2 className="text-lg font-bold dark:text-white">Coming Soon</h2>
-      </div>
-    </div> */}
-
-        {/* Placeholder Card */}
-        {/* <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
-      <div className="flex items-center justify-center w-full h-full">
-        <h2 className="text-lg font-bold dark:text-white">Coming Soon</h2>
-      </div>
-    </div> */}
       </div>
     </section>
   );
