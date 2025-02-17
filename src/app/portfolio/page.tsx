@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function page() {
   return (
     <div className="flex flex-col gap-5 pt-20 pb-12">
+      <h1 className="pb-6 text-2xl font-bold dark:text-white">My Portfolio</h1>
       <h1 className="py-4 text-gray-lightmode">Latest ongoing projects</h1>
       {/* Portfolio Grid */}
       <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">

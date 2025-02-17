@@ -39,7 +39,7 @@ export default function Nav() {
               </Link>
             </li>
             <li>
-              <Link href="/works" passHref>
+              <Link href="/portfolio" passHref>
                 <button
                   aria-label="Works"
                   className="flex items-center justify-center px-2 text-lg font-semibold transition-colors duration-300 rounded-lg h-9 w-9 hover:bg-gray-light focus:bg-gray-light dark:focus:bg-gray-medium dark:hover:bg-gray-medium dark:font-light dark:text-white"
