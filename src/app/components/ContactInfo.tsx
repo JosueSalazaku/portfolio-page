@@ -8,6 +8,7 @@ function ContactInfo() {
         Discover my projects on <a href="https://github.com/JosueSalazaku" className="font-bold text-blue-500 hover:underline">Github</a>, 
         connect with me on <a href="https://www.linkedin.com/in/yourusername" className="font-bold text-blue-500 hover:underline">LinkedIn</a>, 
         or email me directly at <a href="mailto:josuesalazaku@gmail.com" className="font-bold text-blue-500 hover:underline">josuesalazaku@gmail.com</a>.
+        For more info on my experience, visit my <a href="/experience" className="font-bold text-blue-500 hover:underline">experience</a> page.
       </p>
     </div>
   )
