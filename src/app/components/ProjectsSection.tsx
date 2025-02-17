@@ -10,12 +10,12 @@ function ProjectsSection() {
         <h1 className="pb-6 text-2xl font-bold dark:text-white">
           My Portfolio
         </h1>
-        {/* <Link
+        <Link
           href="/works"
           className="block w-24 p-2 mb-4 text-center transition duration-300 ease-in-out border rounded-lg dark:bg-gray-dark hover:border-gray-lightmode dark:hover:border-gray-darkmode border-gray-light dark:border-gray-medium"
         >
           All works
-        </Link> */}
+        </Link>
       </div>
 
       <h1 className="py-4 text-gray-lightmode">Latest ongoing projects</h1>
