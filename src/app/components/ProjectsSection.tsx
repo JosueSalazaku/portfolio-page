@@ -23,7 +23,7 @@ function ProjectsSection() {
       <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
         {/* Project Card */}
         <Link
-          href="works/unreadpiles"
+          href="portfolio/unreadpiles"
         >
           <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
             <Image
@@ -52,7 +52,7 @@ function ProjectsSection() {
 
         {/* Project Card */}
         <Link
-          href="works/keanino"
+          href="portfolio/keanino"
         >
           <div className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]">
             <Image
@@ -81,7 +81,7 @@ function ProjectsSection() {
 
         {/* Project Card */}
         <Link
-          href="works/linkup"
+          href="portfolio/linkup"
 
           className="relative bg-gray-lightest dark:bg-gray-dark border border-gray-light dark:border-gray-medium rounded-lg overflow-hidden aspect-[4/3]"
         >

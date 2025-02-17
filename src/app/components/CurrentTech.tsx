@@ -18,13 +18,26 @@ function CurrentTech() {
     <section className="flex flex-col pt-12 pb-12 ">
       <h1 className="font-bold dark:text-white">Current Technologies</h1>
       <p className="mt-4 text-gray-lightmode dark:text-gray-darkmode">
-        Here are some of the main tools and tech I use to build awesome stuff. From frameworks to libraries, these are the go-to technologies that help bring my ideas to life.
+        Curious about what I can build? 🚀 Here are the key tools and
+        technologies I use to bring ideas to life—powerful frameworks,
+        libraries, and everything in between. See them in action! Explore my
+        portfolio and check out the projects I’ve worked on:
+        <a
+          href="/portfolio"
+          className="pl-2 font-semibold text-blue-500 transition-colors hover:underline hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          View My Portfolio
+        </a>
       </p>
-      <div id="logo" className="flex flex-row gap-[11px] pt-8 md:gap-9 lg:gap-[38px]">
+      <p className="mt-2 text-gray-lightmode dark:text-gray-darkmode"></p>
+      <div
+        id="logo"
+        className="flex flex-row gap-[11px] pt-8 md:gap-9 lg:gap-[38px]"
+      >
         {techs.map((tech, index) => (
           <div
             key={index}
-            title={tech.alt} 
+            title={tech.alt}
             className="flex flex-col items-center"
           >
             <div
