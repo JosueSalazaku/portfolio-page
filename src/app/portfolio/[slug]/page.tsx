@@ -4,12 +4,6 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { ArrowUpRight, Globe, Tag } from "lucide-react";
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
-
 type WorkItem = {
   id: number;
   title: string;
@@ -59,8 +53,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function WorkDetail({ params }: PageProps) {
-  const work = works.find((work) => work.link === params.slug);
+export default async function WorkDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const work = works.find((work) => work.link === slug);
 
   if (!work) {
     notFound();
