@@ -57,8 +57,8 @@ const WorkCard = ({ work }: { work: WorkItem }) => (
 
 export default function Portfolio() {
   return (
-    <div className="container w-full gap-5 px-4 py-8 pt-20 pb-12 mx-auto">
-      <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">My Portfolio</h2>
+    <div className="gap-5 px-4 py-8 pt-20 pb-12 mx-auto ">
+      <h2 className="mb-6 font-bold text-black dark:text-white">My Portfolio</h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
         {works.map((work) => (
           <Link href={work.link} key={work.id} className="h-full">
