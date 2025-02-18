@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { notFound } from "next/navigation";
+import React from "react";
 
 type WorkItem = {
   id: number;
@@ -40,49 +41,45 @@ const works: WorkItem[] = [
   },
 ];
 
-const WorkCard = ({ work }: { work: WorkItem }) => (
-  <div className="h-full overflow-hidden rounded-lg shadow-md bg-gray-dark dark:bg-gray-800">
-    <Image
-      src={work.imageUrl || "/placeholder.svg"}
-      alt={work.title}
-      width={800}
-      height={600}
-      className="object-cover w-full h-48"
-    />
-    <div className="p-4">
-      <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
-        {work.title}
-      </h3>
-      <div className="flex flex-wrap gap-2 rf">
-        {work.tags.map((tag, index) => (
-          <span
-            key={index}
-            className="px-2 py-1 text-sm text-gray-700 bg-black rounded-lg dark:text-gray-300 dark:bg-gray-700"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-    </div>
-  </div>
-);
+export async function generateStaticParams() {
+  return works.map((work) => ({
+    slug: work.link,
+  }));
+}
 
-export default function Portfolio() {
+export default function WorkDetail({ params }: { params: { slug: string } }) {
+  const work = works.find((work) => work.link === params.slug);
+
+  if (!work) {
+    notFound();
+  }
+
   return (
-    <div className="gap-5 px-4 py-8 pt-20 pb-12 mx-auto ">
-      <h2 className="mb-6 font-bold text-black dark:text-white">
-        My Portfolio
-      </h2>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-        {works.map((work) => (
-          <Link
-            href={`/portfolio/${work.link}`}
-            key={work.id}
-            className="h-full"
-          >
-            <WorkCard work={work} />
-          </Link>
-        ))}
+    <div className="container w-full px-4 py-8 mx-auto">
+      <h1 className="mb-6 text-3xl font-bold text-black dark:text-white">
+        {work.title}
+      </h1>
+      <Image
+        src={work.imageUrl}
+        alt={work.title}
+        width={800}
+        height={600}
+        className="object-cover w-full h-48"
+      />
+      <div className="p-4">
+        <p className="mb-4 text-lg text-black dark:text-white">
+          {work.description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {work.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 text-sm text-gray-700 bg-black rounded-lg dark:text-gray-300 dark:bg-gray-700"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
