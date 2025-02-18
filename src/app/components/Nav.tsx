@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ModeToggle } from "./ModeToggle";
+// import { ModeToggle } from "./ModeToggle";
 import Link from "next/link";
 
 export default function Nav() {
@@ -13,7 +13,7 @@ export default function Nav() {
       backdrop-blur-md shadow-[0_0_15px_5px_rgba(200,200,200,0.4)] dark:shadow-[0_0_15px_5px_rgba(0,0,0,0.6)]"
       >
         <div>
-          <ul className="flex flex-row items-center justify-between w-full gap-4">
+          <ul className="flex flex-row items-center justify-between w-full gap-6">
             <li>
               <Link href="/" passHref>
                 <button
@@ -77,25 +77,26 @@ export default function Nav() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-black dark:text-white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="text-black feather feather-briefcase dark:text-white"
                   >
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                    <path d="M8 11h8" />
+                    <path d="M8 7h6" />
                   </svg>
                 </button>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <ModeToggle />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
