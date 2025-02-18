@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
-import { ArrowUpRight, Globe, Tag } from "lucide-react"
+import { ArrowUpRight, Globe, Tag } from "lucide-react";
+
+type PageProps = {
+  params: {
+    slug: string;
+  };
+};
 
 type WorkItem = {
   id: number;
@@ -53,7 +59,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function WorkDetail({ params }: { params: { slug: string } }) {
+export default function WorkDetail({ params }: PageProps) {
   const work = works.find((work) => work.link === params.slug);
 
   if (!work) {
@@ -97,5 +103,5 @@ export default function WorkDetail({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
